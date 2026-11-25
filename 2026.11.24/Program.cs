@@ -52,7 +52,49 @@ namespace TesztProgram
                 }
             }
 
-            
+            // 2. Rendezés dátum szerint
+
+            for (int j = 0; j < bejegyzesek.Length - 1; j++)
+            {
+                for (int k = j + 1; k < bejegyzesek.Length; k++)
+                {
+                    if (bejegyzesek[j].GetDatum() >
+                        bejegyzesek[k].GetDatum())
+                    {
+                        IndexBejegyzes seged = bejegyzesek[j];
+                        bejegyzesek[j] = bejegyzesek[k];
+                        bejegyzesek[k] = seged;
+                    }
+                }
+            }
+
+            // 3. Tömb tartalmának fájlba írása
+
+            StreamWriter sw = new StreamWriter("index.txt");
+
+            foreach (IndexBejegyzes bejegyzes in bejegyzesek)
+            {
+                sw.WriteLine(bejegyzes.ToString());
+            }
+
+            sw.Close();
+
+            Console.WriteLine("\nA fájlba írás sikeres!");
+
+            // 4. Fájl tartalmának listázása
+
+            Console.WriteLine("\nA fájl tartalma:");
+
+            StreamReader sr = new StreamReader("index.txt");
+
+            while (!sr.EndOfStream)
+            {
+                Console.WriteLine(sr.ReadLine());
+            }
+
+            sr.Close();
+
+            Console.ReadKey();
         }
     }
 }
