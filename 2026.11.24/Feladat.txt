@@ -1,0 +1,42 @@
+Hozzunk létre saját névtérben egy olyan osztályt, ami iskolai ellenőrzőben (egyetemi indexben) egy
+
+bejegyzést reprezentál.
+
+Adattagjai: tantárgy neve, dátum, érdemjegy.
+
+Konstruktora: a megadott három paraméterrel inicializálja az adattagokat. Ellenőrzést végez: ha az
+
+érdemjegy nem 1 és 5 közötti érték, InvalidMarkException kivételt dob (saját kivétel).
+
+Metódusai: getter metódusok az adattagok lekérdezéséhez, ToString.
+
+Hozzuk létre saját névtérben az InvalidMarkException kivételosztályt.
+
+Adattagja: érdemjegy.
+
+Konstruktora: a hibás érdemjegy. Kiírja, hogy a megadott érdemjegy nem érvényes.
+
+Metódusa: érdemjegy lekérdező metódus.
+
+Hozzunk létre egy futtatható teszt osztályt.
+
+1. Olvassunk be egy 5 elemű tömbbe index bejegyzéseket (tantárgy, dátum, érdemjegy). Az
+
+érdemjegyet szövegként olvassuk be és próbáljuk int-re konvertálni. Ha nem sikerül, automatikusan
+
+FormatException kivétel dobódik. Ha sikerül, akkor próbáljunk létrehozni egy index bejegyzés
+
+objektumot. Ha az érdemjegy nem 1 és 5 közé esik, akkor InvalidMarkException kivétel fog
+
+dobódni.
+
+2. Az index bejegyzéseket tároló tömböt rendezzük dátum szerint.
+
+3. Írjuk ki fájlba a tömb tartalmát.
+
+4. Listázzuk a fájl tartalmát.
+
+5. Írjuk át úgy a feladatot, hogy a beolvasott index bejegyzéseket dinamikus tömbben tároljuk; és
+
+végezzük el így a fájl műveleteket és a rendezést.
+Kérem ennek c# megoldását
