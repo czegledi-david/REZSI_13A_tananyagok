@@ -1,0 +1,34 @@
+Definiáljon saját névtérben egy „Homerseklet” osztályt, melynek adattagjai: a hőmérséklet (valós)
+és a mértékegység (enum: CELSIUS, KELVIN).
+- Definiáljon konstruktort, amellyel egy hőmérséklet adatai beállíthatók (2 paraméteres)
+- Definiáljon konstruktort, amellyel inicializál egy hőmérsékletet (1 paraméteres) és a
+mértékegység automatikusan CELSIUS
+- Definiálja át a ToString metódust, amelyben visszaadja a hőmérséklet összes adatát.
+- Definiáljon getter, setter metódusokat az adattagok értékének beállítására és lekérdezésére.
+- Definiáljon osztályszintű konverziós metódust, amely paraméterben megkap egy
+hőmérsékelt értéket és egy mértékegységet és visszaadja az adott hőmérséklet értéket a
+paraméterben megadott mértékegységben (0 Celsius=273.15 Kelvin)
+Definiáljon külön névtérben egy futtatható „HoProba” osztályt majd oldja meg az alábbi
+feladatokat:
+- Hozzon létre négy hőmérséklet objektumot. Az első kettő adatait ellenőrzött módon olvassa be: az
+1. adatai 15 és Celsius, a 2. adatai 300 és Kelvin, az utolsó kettő értéke pedig 0-100 között
+véletlenszerűen generált Celsius. Tárolja el ezeket az objektumokat egy tömbben.
+- Írjon metódust, amely paraméterként megkapja ezt a tömböt és kiírja a tömb objektumainak
+adatait (foreach ciklussal).
+- Konvertálja az 1. Celsius mértékegységű objektum értékét Kelvin-re majd írja ki az értékét.
+- Konvertálja a 2. Kelvin mértékegységű objektum értékét Celsius-ra majd írja ki az értékét.
+- Írjon metódust amely paraméterként megkapja ezt a tömböt és visszaadja az átlaghőmérsékletet
+Kelvinben. Ügyeljen arra, hogy ha a hőmérséklet Celsius volt akkor azt előbb Kelvinre kell
+konvertálni!
+Elvárt output:
+A tömb elemeinek listázása:
+Homerseklet [ertek=15.0, mertekegyseg=Celsius]
+Homerseklet [ertek=300.0, mertekegyseg=Kelvin]
+Homerseklet [ertek=58.2614336710285, mertekegyseg=Celsius]
+Homerseklet [ertek=86.99428465068647, mertekegyseg=Celsius]
+Konverzió:
+15 Celsius : 288.15 Kelvin
+300 Kelvin : 26.850000000000023 Celsius
+Számítás:
+Az átlaghőmérséklet: 319.9264295804287 Kelvin
+Ennek kérem a c# megoldását. Kommenteld kódon belűl a dolgokat plussz a végén is magyarázd le
