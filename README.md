@@ -1,1 +1,1 @@
-# -REZSI-_13A_tananyagok
+# REZSI_13A_tananyagok
